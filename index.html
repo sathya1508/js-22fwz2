@@ -6,9 +6,11 @@
 <button id="saveBtn" onclick="ch()">Save</button>
 
 <script type="text/javascript">
-let count = 9;
-function ch() {
-  console.log(count);
-  scorecard.innerText = count;
-}
+  let count = 9;
+  let scorecard = document.getElementById('score');
+  function ch() {
+    count += 1;
+    console.log(count + 1);
+    scorecard.innerText = count;
+  }
 </script>
